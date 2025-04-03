@@ -1,13 +1,10 @@
-package Book;
-
-
 public class Book {
-    private String title;
+    private static String title;
     private String author;
     private int year;
 
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
     public String getAuthor() {
@@ -15,7 +12,7 @@ public class Book {
     }
     @Override
     public String toString() {
-        return "Book.Book:\n" +
+        return "Book:\n" +
                 "Название: " + title + " | " +
                 "Автор книги: " + author + " | " + "Год выпсука: " + year;
     }
