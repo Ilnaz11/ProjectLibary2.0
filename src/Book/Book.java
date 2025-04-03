@@ -1,22 +1,25 @@
+package Book;
+import Libary.Libary;
+
 public class Book {
     private static String title;
-    private String author;
-    private int year;
+    private static String author;
+    private static int year;
 
 
     public static String getTitle() {
         return title;
     }
-    public String getAuthor() {
+    public static String getAuthor() {
         return author;
     }
     @Override
     public String toString() {
-        return "Book:\n" +
+        return "Book.Book:\n" +
                 "Название: " + title + " | " +
                 "Автор книги: " + author + " | " + "Год выпсука: " + year;
     }
-    public int getYear() {
+    public static int getYear() {
         return year;
     }
 
