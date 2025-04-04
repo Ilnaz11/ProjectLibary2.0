@@ -1,16 +1,16 @@
 package Book;
-import Libary.Libary;
+
 
 public class Book {
-    private static String title;
-    private static String author;
-    private static int year;
+    private String title;
+    private String author;
+    private int year;
 
 
-    public static String getTitle() {
+    public String getTitle() {
         return title;
     }
-    public static String getAuthor() {
+    public String getAuthor() {
         return author;
     }
     @Override
@@ -19,7 +19,7 @@ public class Book {
                 "Название: " + title + " | " +
                 "Автор книги: " + author + " | " + "Год выпсука: " + year;
     }
-    public static int getYear() {
+    public int getYear() {
         return year;
     }
 
