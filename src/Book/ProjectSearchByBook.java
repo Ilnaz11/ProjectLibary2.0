@@ -35,7 +35,6 @@ public class ProjectSearchByBook {
             }
         }
     }
-
     // Ищет книгу по названию
     public void searchByAuthor() {
         System.out.println("Введите имя автора книги");

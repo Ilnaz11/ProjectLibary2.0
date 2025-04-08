@@ -45,3 +45,4 @@ public class ProjectLibary {
         return listBook1.remove(book);
     }
 }
+// Идет проверка git revert
