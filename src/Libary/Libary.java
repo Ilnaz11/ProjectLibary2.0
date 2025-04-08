@@ -2,14 +2,13 @@ package Libary;
 import Book.Book;
 import java.util.*;
 
-import Book.ProjectSearchByBook;
+import static Book.ProjectSearchByBook.*;
 import static Libary.ProjectLibary.*;
 
 public class Libary {
     private boolean running = true;
     public static List<Book> listBook1 = new ArrayList<>();
     public  Scanner scanner = new Scanner(System.in);
-    ProjectSearchByBook projectSearchByBook = new ProjectSearchByBook();
 
     public void viewBooks() {
         for (Book book : listBook1) {
@@ -26,7 +25,7 @@ public class Libary {
         System.out.println("[3: ПОКАЗАТЬ СПИСОК КНИГ БИБЛИТОЕКИ]");
         System.out.println("[4: ИСКАТЬ КНИГУ ПО ЕГО НАЗВАНИЮ]");
         System.out.println("[5: ИСКАТЬ КНИГУ ПО ИМЕНИ АВТОРА]");
-        System.out.println("[6: ИСКАТЬ КНИГУ ПО ГОДУ ВЫПУСКА]");
+        System.out.println("[6: СКАТЬ КНИГУ ПО ГОДУ ВЫПУСКА]");
         System.out.println("[7: ВЫХОД]");
         int vvod = 0;
         try {
@@ -45,13 +44,13 @@ public class Libary {
                 viewBooks();
                 break;
             case 4:
-                projectSearchByBook.searchByBook();
+                searchByBook();
                 break;
             case 5:
-                projectSearchByBook.searchByAuthor();
+                searchByAuthor();
                 break;
             case 6:
-                projectSearchByBook.searchByYear();
+                searchByYear();
                 break;
             case 7:
                 running = false;
