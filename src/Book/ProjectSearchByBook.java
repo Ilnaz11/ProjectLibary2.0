@@ -36,6 +36,20 @@ public class ProjectSearchByBook {
         }
     }
 
+    /* public void searchByAuthor() {
+        System.out.println("Введите имя автора книги");
+        while (true) {
+            String s = scanner.nextLine();
+            if(book.getAuthor().equals(s)) {
+                System.out.println("Книги такого автора пристутсвуют в нашей библиотеке");
+                break;
+            } else {
+                System.out.println("Ты че попутал");
+                break;
+            }
+        }
+    }* /
+
     // Ищет книгу по названию
     public void searchByAuthor() {
         System.out.println("Введите имя автора книги");
